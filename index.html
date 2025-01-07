@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Интернет-магазин Shtyrman390 — лучшие товары по выгодным ценам с доставкой по всей Украине.">
-    <meta name="keywords" content="товары, интернет-магазин, доставка, Украина">
-    <title>Магазин Shtyrman390</title>
+    <meta name="description" content="Интернет-магазин Shtyrman390 — категории товаров по выгодным ценам.">
+    <meta name="keywords" content="интернет-магазин, категории товаров, доставка, Украина">
+    <title>Категории товаров | Магазин Shtyrman390</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -14,75 +14,33 @@
         <h1>Магазин Shtyrman390</h1>
         <nav>
             <a href="index.html">Главная</a>
-            <a href="#electronics">Электроника</a>
-            <a href="#clothing">Одежда</a>
-            <a href="#home">Товары для дома</a>
+            <a href="#categories">Категории</a>
             <a href="#cart">Корзина (<span id="cart-count">0</span>)</a>
+            <input type="text" id="search-bar" placeholder="Поиск товаров..." oninput="searchProducts()">
         </nav>
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Поиск товаров...">
-            <button onclick="searchProducts()">Поиск</button>
-        </div>
     </header>
     <main>
-        <!-- Категория Электроника -->
-        <section id="electronics">
-            <h2>Электроника</h2>
+        <section id="categories">
+            <h2>Категории товаров</h2>
             <div class="category">
-                <div class="product" data-name="Смартфон" data-category="electronics">
-                    <img src="images/electronics1.jpg" alt="Смартфон">
-                    <h3>Смартфон</h3>
-                    <p>Цена: 5000 грн.</p>
-                    <button onclick="addToCart('Смартфон', 5000)">Добавить в корзину</button>
-                </div>
-                <div class="product" data-name="Ноутбук" data-category="electronics">
-                    <img src="images/electronics2.jpg" alt="Ноутбук">
-                    <h3>Ноутбук</h3>
-                    <p>Цена: 15000 грн.</p>
-                    <button onclick="addToCart('Ноутбук', 15000)">Добавить в корзину</button>
-                </div>
+                <a href="electronics.html">
+                    <img src="images/electronics.jpg" alt="Электроника">
+                    <h3>Электроника</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="clothing.html">
+                    <img src="images/clothing.jpg" alt="Одежда">
+                    <h3>Одежда</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="home.html">
+                    <img src="images/home.jpg" alt="Товары для дома">
+                    <h3>Товары для дома</h3>
+                </a>
             </div>
         </section>
-
-        <!-- Категория Одежда -->
-        <section id="clothing">
-            <h2>Одежда</h2>
-            <div class="category">
-                <div class="product" data-name="Футболка" data-category="clothing">
-                    <img src="images/clothing1.jpg" alt="Футболка">
-                    <h3>Футболка</h3>
-                    <p>Цена: 300 грн.</p>
-                    <button onclick="addToCart('Футболка', 300)">Добавить в корзину</button>
-                </div>
-                <div class="product" data-name="Куртка" data-category="clothing">
-                    <img src="images/clothing2.jpg" alt="Куртка">
-                    <h3>Куртка</h3>
-                    <p>Цена: 2000 грн.</p>
-                    <button onclick="addToCart('Куртка', 2000)">Добавить в корзину</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Категория Товары для дома -->
-        <section id="home">
-            <h2>Товары для дома</h2>
-            <div class="category">
-                <div class="product" data-name="Чайник" data-category="home">
-                    <img src="images/home1.jpg" alt="Чайник">
-                    <h3>Чайник</h3>
-                    <p>Цена: 500 грн.</p>
-                    <button onclick="addToCart('Чайник', 500)">Добавить в корзину</button>
-                </div>
-                <div class="product" data-name="Пылесос" data-category="home">
-                    <img src="images/home2.jpg" alt="Пылесос">
-                    <h3>Пылесос</h3>
-                    <p>Цена: 3000 грн.</p>
-                    <button onclick="addToCart('Пылесос', 3000)">Добавить в корзину</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Раздел корзины -->
         <section id="cart">
             <h2>Корзина</h2>
             <ul id="cart-items"></ul>
