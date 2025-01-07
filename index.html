@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Интернет-магазин Shtyrman390. Лучшие товары по выгодным ценам с доставкой по всей Украине.">
     <title>Магазин Shtyrman390</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,21 +15,57 @@
             <a href="#products">Товары</a>
             <a href="#about">О нас</a>
             <a href="#contacts">Контакты</a>
+            <a href="#cart">Корзина (<span id="cart-count">0</span>)</a>
         </nav>
     </header>
     <main>
+        <!-- Раздел с товарами -->
         <section id="products">
             <h2>Наши товары</h2>
             <div class="product">
+                <img src="images/product1.jpg" alt="Товар 1">
                 <h3>Товар 1</h3>
                 <p>Описание товара 1. Цена: 100 грн.</p>
-                <button onclick="alert('Товар добавлен в корзину!')">Купить</button>
+                <button onclick="addToCart('Товар 1', 100)">Добавить в корзину</button>
             </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Товар 2">
+                <h3>Товар 2</h3>
+                <p>Описание товара 2. Цена: 200 грн.</p>
+                <button onclick="addToCart('Товар 2', 200)">Добавить в корзину</button>
+            </div>
+        </section>
+
+        <!-- Раздел корзины -->
+        <section id="cart">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p>Итоговая сумма: <span id="total-price">0</span> грн.</p>
+            <button onclick="checkout()">Оформить заказ</button>
+        </section>
+
+        <!-- Раздел о компании -->
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Магазин Shtyrman390 предлагает лучшие товары с доставкой по всей Украине. Гарантируем качество и отличные цены!</p>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <form action="/send-message" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Магазин Shtyrman390</p>
+        <p>&copy; 2025 Магазин Shtyrman390. Все права защищены.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
