@@ -3,30 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Купить Кофе в Украине по самой лучшей цене магазина Shtyrman390.">
-    <meta name="keywords" content="Кофе, Купить кофе, Кофе в зернах, Кофе Молотый, Кофе растворимый, Кофе в капсулах, Кофе в Украине, Кофе в киеве,>
-    <title>Кофе</title>
+    <meta name="description" content="Интернет-магазин Shtyrman390 — лучшие товары по выгодным ценам с доставкой по всей Украине.">
+    <meta name="keywords" content="товары, интернет-магазин, доставка, Украина">
+    <title>Магазин Shtyrman390</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Магазин Shtyrman390 - Новая страница</h1>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="Кофе.html">Кофе</a>
-            <a href="#electronics">Электроника</a>
-            <a href="#clothing">Одежда</a>
-            <a href="#home">Товары для дома</a>
+        <h1>Добро пожаловать в магазин Shtyrman390</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="newpage.htm8">Мужская обувь</a>
+        <a href="newpage.htm7">Женская обувь</a>
+        <a href="newpage.htm6">Кофе в зернах</a>
+        <a href="newpage.htm5">Кофе молотый</a>
+        <a href="newpage.htm4">Кофе растворимый</a>
+        <a href="newpage.htm3">Пледы</a>
+        <a href="newpage.htm2">Резиновые сапоги</a>
+        <a href="newpage.html">Орехи</a>
+        <a href="#electronics">Электроника</a>
+        <a href="#clothing">Одежда</a>
+        <a href="#home">Товары для дома</a>
             <a href="#cart">Корзина (<span id="cart-count">0</span>)</a>
         </nav>
     </header>
     <main>
-        <h2>Добро пожаловать на новую страницу!</h2>
-        <p>Это пример новой страницы для вашего интернет-магазина.</p>
+        <!-- Категория Электроника -->
+        <section id="electronics">
+            <h2>Электроника</h2>
+            <div class="category">
+                <div class="product">
+                    <img src="images/electronics1.jpg" alt="Товар 1">
+                    <h3>Смартфон</h3>
+                    <p>Цена: 5000 грн.</p>
+                    <button onclick="addToCart('Смартфон', 5000)">Добавить в корзину</button>
+                </div>
+                <div class="product">
+                    <img src="images/electronics2.jpg" alt="Товар 2">
+                    <h3>Ноутбук</h3>
+                    <p>Цена: 15000 грн.</p>
+                    <button onclick="addToCart('Ноутбук', 15000)">Добавить в корзину</button>
+                </div>
+                <!-- Добавьте ещё 8 товаров -->
+            </div>
+        </section>
+
+        <!-- Категория Одежда -->
+        <section id="clothing">
+            <h2>Одежда</h2>
+            <div class="category">
+                <div class="product">
+                    <img src="images/clothing1.jpg" alt="Товар 1">
+                    <h3>Футболка</h3>
+                    <p>Цена: 300 грн.</p>
+                    <button onclick="addToCart('Футболка', 300)">Добавить в корзину</button>
+                </div>
+                <div class="product">
+                    <img src="images/clothing2.jpg" alt="Товар 2">
+                    <h3>Куртка</h3>
+                    <p>Цена: 2000 грн.</p>
+                    <button onclick="addToCart('Куртка', 2000)">Добавить в корзину</button>
+                </div>
+                <!-- Добавьте ещё 8 товаров -->
+            </div>
+        </section>
+
+        <!-- Категория Товары для дома -->
+        <section id="home">
+            <h2>Товары для дома</h2>
+            <div class="category">
+                <div class="product">
+                    <img src="images/home1.jpg" alt="Товар 1">
+                    <h3>Чайник</h3>
+                    <p>Цена: 500 грн.</p>
+                    <button onclick="addToCart('Чайник', 500)">Добавить в корзину</button>
+                </div>
+                <div class="product">
+                    <img src="images/home2.jpg" alt="Товар 2">
+                    <h3>Пылесос</h3>
+                    <p>Цена: 3000 грн.</p>
+                    <button onclick="addToCart('Пылесос', 3000)">Добавить в корзину</button>
+                </div>
+                <!-- Добавьте ещё 8 товаров -->
+            </div>
+        </section>
+
+        <!-- Раздел корзины -->
+        <section id="cart">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p>Итоговая сумма: <span id="total-price">0</span> грн.</p>
+            <button onclick="checkout()">Оформить заказ</button>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Магазин Shtyrman390. Все права защищены.</p>
     </footer>
 </body>
 </html>
-
