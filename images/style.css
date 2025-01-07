@@ -1,0 +1,117 @@
+/* Общие стили */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #333;
+    --light-bg: #f9f9f9;
+    --dark-bg: #fff;
+    --border-radius: 10px;
+    --transition: 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--light-bg);
+    color: var(--secondary-color);
+}
+
+/* Шапка */
+header {
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: var(--dark-bg);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#search-bar {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+}
+
+/* Категории */
+#categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.category {
+    text-align: center;
+    margin: 20px;
+    transition: transform var(--transition);
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: var(--dark-bg);
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    max-width: 100%;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.category h3 {
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+
+/* Корзина */
+#cart {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: var(--dark-bg);
+    border-radius: var(--border-radius);
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+button:hover {
+    background: #45a049;
+}
