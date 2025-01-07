@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    max-width: 400px;
+}
+/* Общий стиль сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Светлый фон */
+    color: #333; /* Тёмный текст */
+}
+
+/* Шапка сайта */
+header {
+    background: #4CAF50; /* Зелёный фон */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Меню навигации */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Подчёркивание при наведении */
+}
+
+/* Карточки товаров */
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    background-color: white; /* Белый фон карточки */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    max-width: 400px;
+}
+
+/* Заголовок товаров */
+.product h3 {
+    color: #4CAF50; /* Зелёный текст */
+}
+
+/* Кнопки */
+button {
+    background-color: #4CAF50; /* Зелёная кнопка */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049; /* Более тёмный зелёный при наведении */
+}
+
+/* Подвал */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Общий стиль сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Шапка сайта */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Меню навигации */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Карточки товаров */
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px auto; /* Центрируем карточки */
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+/* Заголовок товаров */
+.product h3 {
+    color: #4CAF50;
+}
+
+/* Кнопки */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Подвал */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* === Адаптивный дизайн === */
+
+/* Для экранов шириной до 768px (планшеты) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    .product {
+        max-width: 90%; /* Растягиваем карточки до 90% ширины экрана */
+    }
+}
+
+/* Для экранов шириной до 480px (смартфоны) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 0.8rem;
+    }
+
+    .product {
+        max-width: 100%; /* Карточки занимают всю ширину экрана */
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+}
